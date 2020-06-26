@@ -63,7 +63,7 @@ public class DiceRoll {
 				label.setIcon(fourImg);
 			} else if (randomChoice == 4) {
 				label.setIcon(fiveImg);
-			} else {
+			} else if (randomChoice ==5) {
 				label.setIcon(sixImg);
 			}
 		});
