@@ -17,7 +17,19 @@ public class AnimalFarm {
 	public static void main(String[] args) {
 			
 		/* 1. Ask the user which animal they want, then play the sound of that animal. */			 
+			String input = JOptionPane.showInputDialog("type in an animal ");
+		 if(input == "cow") {
+				playMoo();
+				
+			}
+		if(input== "duck") {
 			
+		
+			playQuack();
+		}
+		if(input == "dog") {
+		playWoof();
+		}
 		/* 2. Make it so that the user can keep entering new animals. */
 
 	}
@@ -51,12 +63,6 @@ public class AnimalFarm {
 	/* Ignore this stuff */
 	
 	public static void playNoise(String soundFile) {
-		try {
-			AudioClip sound = JApplet.newAudioClip(AnimalFarm.class.getResource(soundFile));
-			sound.play();
-			Thread.sleep(3400);
-		} catch (Exception ex) {
-			ex.printStackTrace();
-		}
+		System.out.println(soundFile);
 	}
 }
