@@ -3,14 +3,21 @@ package _03_string_conversion._3_rollercoaster;
 import javax.swing.JOptionPane;
 
 public class RollerCoaster {
-
+public static void main(String[]args) {
+	
+	String heightToRide = JOptionPane.showInputDialog("what is your height in inches" );
+	if( heightToRide > 42); {
+		if( heightToRide > 42 ) { }
+			
+	
+	
+}
 	// 1) Make a main method that includes all the steps below…. 
 		
 		// 2) Ask the user to enter their height in inches using JOptionPane and set it to the variable heightToRide
 		
 		// Uncomment the line below...
-			//if( heightToRide > 42 ) { }
-		
+			 
 		// Do you see the heightToRide > 42 underlined red? That is because you are comparing a STRING to an INTEGER.
 		
 		// 3) Convert heightToRide to heightAsInt using Integer.parseInt();  Hint: int heightAsInt = Integer.parse... 
