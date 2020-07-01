@@ -5,9 +5,16 @@ import javax.swing.JOptionPane;
 public class RollerCoaster {
 public static void main(String[]args) {
 	
-	String heightToRide = JOptionPane.showInputDialog("what is your height in inches" );
-	if( heightToRide > 42); {
-		if( heightToRide > 42 ) { }
+String heightToRide = JOptionPane.showInputDialog("what is your height in inches" );
+ int height=Integer.parseInt(heightToRide);	
+if( height > 42) {
+	JOptionPane.showMessageDialog(null, "Hurray! Your are tall enought to ride");
+	
+
+	if(height<= 42) {
+		JOptionPane.showMessageDialog(null, "Sorry butyour not tall enough to go on");
+		
+	}
 			
 	
 	
@@ -30,3 +37,4 @@ public static void main(String[]args) {
 	
 		// 6) else print: "You must be at least 42 inches tall to ride the roller coaster pal!"
 } 
+}
